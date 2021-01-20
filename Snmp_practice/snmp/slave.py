@@ -9,21 +9,22 @@ from time import sleep
 import logging
 
 if __name__ == '__main__':
-    sys.path.insert(0, '../')
+    sys.path.insert(0, '../../')
 
-from load_yaml import conf
+from Snmp_practice.load_yaml import conf
+from Snmp_practice import logger
 
-log = logging.getLogger('slave')
-logging.basicConfig(filename=conf['log_file'], level=logging.INFO)
+log = logger.Logger('slave')
+# logging.basicConfig(filename=conf['log_file'],format='%(asctime)s - %(name)s - %(levelname)s - %(message)s', level=logging.INFO)
 
 try:
     if conf is None:
 
-        log.error("Config yaml error return None")
+        log.app_log.error("Config yaml error return None")
         sys.exit()
 except Exception as e:
 
-        log.error(e)
+        log.app_log.error(e)
 
 UDP_IP = conf['UDP_IP']
 UDP_PORT = conf['UDP_PORT']
@@ -47,7 +48,7 @@ while True:
             exit()
         if (data == b"") or (b'empty' in data):
             continue
-        log.info("Received message: %s " %data)
+        log.app_log.info("Received message: %s " %data)
 
         clt_tcpsock.send(data)
 

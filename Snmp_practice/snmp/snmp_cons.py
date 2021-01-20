@@ -6,17 +6,18 @@ import os, sys
 import logging
 
 if __name__ == '__main__':
-    sys.path.insert(0, '../')
+    sys.path.insert(0, '../../')
 
-from load_yaml import conf
+from Snmp_practice.load_yaml import conf
+from Snmp_practice import logger
 
-log = logging.getLogger('snmp_cons')
-logging.basicConfig(filename=conf['log_file'], level=logging.INFO)
+log = logger.Logger('snmp_cons')
+# logging.basicConfig(filename=conf['log_file'],format='%(asctime)s - %(name)s - %(levelname)s - %(message)s', level=logging.INFO)
 
 try:
     if conf is None:
 
-        log.error("Config yaml error return None")
+        log.app_log.error("Config yaml error return None")
         sys.exit()
 
 except Exception as e:
@@ -36,9 +37,9 @@ consumer = KafkaConsumer('first_topic',
 try:
     for message in consumer:
         if message.value == b"quit":
-            log.info("Message Transfer Completed")
+            log.app_log.info("Message Transfer Completed")
             exit()
-        log.info(message)
+        log.app_log.info(message)
 except KeyboardInterrupt:
     exit()
 

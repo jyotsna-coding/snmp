@@ -10,17 +10,18 @@ from kafka import KafkaProducer
 import logging
 
 if __name__ == '__main__':
-    sys.path.insert(0, '../')
+    sys.path.insert(0, '../../')
 
-from load_yaml import conf
+from Snmp_practice.load_yaml import conf
+from Snmp_practice import logger
 
-log = logging.getLogger('server')
-logging.basicConfig(filename=conf['log_file'], level=logging.INFO)
+log = logger.Logger('server')
+# logging.basicConfig(filename=conf['log_file'],format='%(asctime)s - %(name)s - %(levelname)s - %(message)s', level=logging.INFO)
 
 try:
     if conf is None:
 
-        log.error("Config yaml error return None")
+        log.app_log.error("Config yaml error return None")
         sys.exit()
 
 except Exception as e:
@@ -47,7 +48,7 @@ while True:
         data = conn.recv(1024)
         if (data == b"") or (b'empty' in data):
             continue
-        log.info(data)
+        log.app_log.info(data)
 
         producer.send('first_topic',data)
         producer.flush()

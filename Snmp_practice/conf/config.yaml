@@ -3,8 +3,8 @@ staging:
   #kafka config
   k_host_port: 'localhost:9092'
   # logging
-  log_dir: "E:\\jyotsna\\Tessrac\\Code_practice\\Snmp_practice\\logs"
-  log_file: "E:\\jyotsna\\Tessrac\\Code_practice\\Snmp_practice\\logs\\snmp1.log"
+  log_dir: "E:\\jyotsna\\Tessrac\\snmp_practice\\Snmp_practice\\logs"
+  log_file: "E:\\jyotsna\\Tessrac\\snmp_practice\\Snmp_practice\\logs\\snmp2.log"
   log_rotate_length: 1000000
   log_max_rotated_files: 100
   # udp config
