@@ -1,0 +1,87 @@
+INFO:kafka.conn:<BrokerConnection node_id=bootstrap-0 host=localhost:9092 <connecting> [IPv6 ('::1', 9092, 0, 0)]>: connecting to localhost:9092 [('::1', 9092, 0, 0) IPv6]
+INFO:kafka.conn:Probing node bootstrap-0 broker version
+INFO:kafka.conn:<BrokerConnection node_id=bootstrap-0 host=localhost:9092 <connecting> [IPv6 ('::1', 9092, 0, 0)]>: Connection complete.
+INFO:kafka.conn:Broker version identified as 2.5.0
+INFO:kafka.conn:Set configuration api_version=(2, 5, 0) to skip auto check_version requests on startup
+WARNING:kafka.coordinator.consumer:group_id is None: disabling auto-commit.
+INFO:kafka.consumer.subscription_state:Updating subscribed topics to: ('first_topic',)
+INFO:kafka.consumer.subscription_state:Updated partition assignment: [TopicPartition(topic='first_topic', partition=0)]
+INFO:kafka.conn:<BrokerConnection node_id=0 host=JyotsnaLaptop:9092 <connecting> [IPv6 ('fe80::99be:1a9a:4f15:c91c', 9092, 0, 19)]>: connecting to JyotsnaLaptop:9092 [('fe80::99be:1a9a:4f15:c91c', 9092, 0, 19) IPv6]
+INFO:kafka.conn:<BrokerConnection node_id=0 host=JyotsnaLaptop:9092 <connecting> [IPv6 ('fe80::99be:1a9a:4f15:c91c', 9092, 0, 19)]>: Connection complete.
+INFO:kafka.conn:<BrokerConnection node_id=bootstrap-0 host=localhost:9092 <connected> [IPv6 ('::1', 9092, 0, 0)]>: Closing connection. 
+INFO:kafka.conn:<BrokerConnection node_id=bootstrap-0 host=localhost:9092 <connecting> [IPv6 ('::1', 9092, 0, 0)]>: connecting to localhost:9092 [('::1', 9092, 0, 0) IPv6]
+INFO:kafka.conn:Probing node bootstrap-0 broker version
+INFO:kafka.conn:<BrokerConnection node_id=bootstrap-0 host=localhost:9092 <connecting> [IPv6 ('::1', 9092, 0, 0)]>: Connection complete.
+INFO:kafka.conn:Broker version identified as 2.5.0
+INFO:kafka.conn:Set configuration api_version=(2, 5, 0) to skip auto check_version requests on startup
+INFO:server:b'SNMP SNMP SNMP'
+INFO:kafka.conn:<BrokerConnection node_id=0 host=JyotsnaLaptop:9092 <connecting> [IPv6 ('fe80::99be:1a9a:4f15:c91c', 9092, 0, 19)]>: connecting to JyotsnaLaptop:9092 [('fe80::99be:1a9a:4f15:c91c', 9092, 0, 19) IPv6]
+INFO:kafka.conn:<BrokerConnection node_id=0 host=JyotsnaLaptop:9092 <connecting> [IPv6 ('fe80::99be:1a9a:4f15:c91c', 9092, 0, 19)]>: Connection complete.
+INFO:kafka.conn:<BrokerConnection node_id=bootstrap-0 host=localhost:9092 <connected> [IPv6 ('::1', 9092, 0, 0)]>: Closing connection. 
+INFO:snmp_cons:ConsumerRecord(topic='first_topic', partition=0, offset=110, timestamp=1611032562947, timestamp_type=0, key=None, value=b'SNMP SNMP SNMP', headers=[], checksum=None, serialized_key_size=-1, serialized_value_size=14, serialized_header_size=-1)
+INFO:server:b'SNMP SNMP SNMP'
+INFO:snmp_cons:ConsumerRecord(topic='first_topic', partition=0, offset=111, timestamp=1611032572971, timestamp_type=0, key=None, value=b'SNMP SNMP SNMP', headers=[], checksum=None, serialized_key_size=-1, serialized_value_size=14, serialized_header_size=-1)
+INFO:server:b'quit'
+INFO:kafka.producer.kafka:Closing the Kafka producer with 0 secs timeout.
+INFO:kafka.producer.kafka:Proceeding to force close the producer since pending requests could not be completed within timeout 0.
+INFO:snmp_cons:Message Transfer Completed
+INFO:kafka.conn:<BrokerConnection node_id=bootstrap-0 host=localhost:9092 <connecting> [IPv6 ('::1', 9092, 0, 0)]>: connecting to localhost:9092 [('::1', 9092, 0, 0) IPv6]
+INFO:kafka.conn:Probing node bootstrap-0 broker version
+INFO:kafka.conn:<BrokerConnection node_id=bootstrap-0 host=localhost:9092 <connecting> [IPv6 ('::1', 9092, 0, 0)]>: Connection complete.
+INFO:kafka.conn:Broker version identified as 2.5.0
+INFO:kafka.conn:Set configuration api_version=(2, 5, 0) to skip auto check_version requests on startup
+WARNING:kafka.coordinator.consumer:group_id is None: disabling auto-commit.
+INFO:kafka.consumer.subscription_state:Updating subscribed topics to: ('first_topic',)
+INFO:kafka.consumer.subscription_state:Updated partition assignment: [TopicPartition(topic='first_topic', partition=0)]
+INFO:kafka.conn:<BrokerConnection node_id=0 host=JyotsnaLaptop:9092 <connecting> [IPv6 ('fe80::99be:1a9a:4f15:c91c', 9092, 0, 19)]>: connecting to JyotsnaLaptop:9092 [('fe80::99be:1a9a:4f15:c91c', 9092, 0, 19) IPv6]
+INFO:kafka.conn:<BrokerConnection node_id=0 host=JyotsnaLaptop:9092 <connecting> [IPv6 ('fe80::99be:1a9a:4f15:c91c', 9092, 0, 19)]>: Connection complete.
+INFO:kafka.conn:<BrokerConnection node_id=bootstrap-0 host=localhost:9092 <connected> [IPv6 ('::1', 9092, 0, 0)]>: Closing connection. 
+INFO:kafka.conn:<BrokerConnection node_id=bootstrap-0 host=localhost:9092 <connecting> [IPv6 ('::1', 9092, 0, 0)]>: connecting to localhost:9092 [('::1', 9092, 0, 0) IPv6]
+INFO:kafka.conn:Probing node bootstrap-0 broker version
+INFO:kafka.conn:<BrokerConnection node_id=bootstrap-0 host=localhost:9092 <connecting> [IPv6 ('::1', 9092, 0, 0)]>: Connection complete.
+INFO:kafka.conn:Broker version identified as 2.5.0
+INFO:kafka.conn:Set configuration api_version=(2, 5, 0) to skip auto check_version requests on startup
+INFO:snmp_dev:message sent is: 'SNMP SNMP SNMP'
+INFO:slave:Received message: b'SNMP SNMP SNMP' 
+INFO:server:b'SNMP SNMP SNMP'
+INFO:kafka.conn:<BrokerConnection node_id=0 host=JyotsnaLaptop:9092 <connecting> [IPv6 ('fe80::99be:1a9a:4f15:c91c', 9092, 0, 19)]>: connecting to JyotsnaLaptop:9092 [('fe80::99be:1a9a:4f15:c91c', 9092, 0, 19) IPv6]
+INFO:kafka.conn:<BrokerConnection node_id=0 host=JyotsnaLaptop:9092 <connecting> [IPv6 ('fe80::99be:1a9a:4f15:c91c', 9092, 0, 19)]>: Connection complete.
+INFO:kafka.conn:<BrokerConnection node_id=bootstrap-0 host=localhost:9092 <connected> [IPv6 ('::1', 9092, 0, 0)]>: Closing connection. 
+INFO:snmp_cons:ConsumerRecord(topic='first_topic', partition=0, offset=113, timestamp=1611032991512, timestamp_type=0, key=None, value=b'SNMP SNMP SNMP', headers=[], checksum=None, serialized_key_size=-1, serialized_value_size=14, serialized_header_size=-1)
+INFO:slave:Received message: b'SNMP SNMP SNMP' 
+INFO:server:b'SNMP SNMP SNMP'
+INFO:snmp_cons:ConsumerRecord(topic='first_topic', partition=0, offset=114, timestamp=1611033001518, timestamp_type=0, key=None, value=b'SNMP SNMP SNMP', headers=[], checksum=None, serialized_key_size=-1, serialized_value_size=14, serialized_header_size=-1)
+INFO:slave:Received message: b'SNMP SNMP SNMP' 
+INFO:snmp_dev:message sent is: 'SNMP SNMP SNMP'
+INFO:server:b'SNMP SNMP SNMP'
+INFO:snmp_cons:ConsumerRecord(topic='first_topic', partition=0, offset=115, timestamp=1611033011521, timestamp_type=0, key=None, value=b'SNMP SNMP SNMP', headers=[], checksum=None, serialized_key_size=-1, serialized_value_size=14, serialized_header_size=-1)
+INFO:snmp_dev:message sent is: 'SNMP SNMP SNMP'
+INFO:slave:Received message: b'SNMP SNMP SNMP' 
+INFO:server:b'SNMP SNMP SNMP'
+INFO:snmp_cons:ConsumerRecord(topic='first_topic', partition=0, offset=116, timestamp=1611033021523, timestamp_type=0, key=None, value=b'SNMP SNMP SNMP', headers=[], checksum=None, serialized_key_size=-1, serialized_value_size=14, serialized_header_size=-1)
+INFO:snmp_dev:message sent is: 'SNMP SNMP SNMP'
+INFO:server:b'SNMP SNMP SNMP'
+INFO:snmp_cons:ConsumerRecord(topic='first_topic', partition=0, offset=117, timestamp=1611033031524, timestamp_type=0, key=None, value=b'SNMP SNMP SNMP', headers=[], checksum=None, serialized_key_size=-1, serialized_value_size=14, serialized_header_size=-1)
+INFO:snmp_dev:message sent is: 'SNMP SNMP SNMP'
+INFO:slave:Received message: b'SNMP SNMP SNMP' 
+INFO:server:b'SNMP SNMP SNMP'
+INFO:snmp_cons:ConsumerRecord(topic='first_topic', partition=0, offset=118, timestamp=1611033041526, timestamp_type=0, key=None, value=b'SNMP SNMP SNMP', headers=[], checksum=None, serialized_key_size=-1, serialized_value_size=14, serialized_header_size=-1)
+INFO:slave:Received message: b'SNMP SNMP SNMP' 
+INFO:server:b'SNMP SNMP SNMP'
+INFO:snmp_cons:ConsumerRecord(topic='first_topic', partition=0, offset=119, timestamp=1611033051527, timestamp_type=0, key=None, value=b'SNMP SNMP SNMP', headers=[], checksum=None, serialized_key_size=-1, serialized_value_size=14, serialized_header_size=-1)
+INFO:snmp_dev:message sent is: 'SNMP SNMP SNMP'
+INFO:slave:Received message: b'SNMP SNMP SNMP' 
+INFO:server:b'SNMP SNMP SNMP'
+INFO:snmp_cons:ConsumerRecord(topic='first_topic', partition=0, offset=120, timestamp=1611033061529, timestamp_type=0, key=None, value=b'SNMP SNMP SNMP', headers=[], checksum=None, serialized_key_size=-1, serialized_value_size=14, serialized_header_size=-1)
+INFO:snmp_dev:message sent is: 'SNMP SNMP SNMP'
+INFO:slave:Received message: b'SNMP SNMP SNMP' 
+INFO:server:b'SNMP SNMP SNMP'
+INFO:snmp_cons:ConsumerRecord(topic='first_topic', partition=0, offset=121, timestamp=1611033071530, timestamp_type=0, key=None, value=b'SNMP SNMP SNMP', headers=[], checksum=None, serialized_key_size=-1, serialized_value_size=14, serialized_header_size=-1)
+INFO:snmp_dev:message sent is: 'SNMP SNMP SNMP'
+INFO:slave:Received message: b'SNMP SNMP SNMP' 
+INFO:server:b'SNMP SNMP SNMP'
+INFO:snmp_cons:ConsumerRecord(topic='first_topic', partition=0, offset=122, timestamp=1611033081531, timestamp_type=0, key=None, value=b'SNMP SNMP SNMP', headers=[], checksum=None, serialized_key_size=-1, serialized_value_size=14, serialized_header_size=-1)
+INFO:server:b'quit'
+INFO:kafka.producer.kafka:Closing the Kafka producer with 0 secs timeout.
+INFO:kafka.producer.kafka:Proceeding to force close the producer since pending requests could not be completed within timeout 0.
+INFO:snmp_cons:Message Transfer Completed
